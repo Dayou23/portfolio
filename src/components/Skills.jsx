@@ -1,6 +1,8 @@
 import { skills } from "../data/constants";
 import styled from "styled-components";
 import SkillBar from "react-skillbars";
+import { Style } from "@mui/icons-material";
+import { useEffect, useState } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -66,11 +68,7 @@ const Skill = styled.div`
   padding: 18px 36px;
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
-  }
-  @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    padding: 10px 5px;
   }
 `;
 
@@ -80,6 +78,9 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
   text-align: center;
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 const SkillList = styled.div`
@@ -106,7 +107,7 @@ const SkillItem = styled.div`
     padding: 8px 12px;
   }
   @media (max-width: 500px) {
-    font-size: 14px;
+    font-size: 10px;
     padding: 6px 12px;
   }
 `;
@@ -121,17 +122,28 @@ const KillBx = styled.div`
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+
+  @media (max-width: 500px) {
+    padding: 60px 8px;
+  }
 `;
 
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  @media (max-width: 500px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const SkillH2 = styled.h2`
   color: ${({ theme }) => theme.text_primary};
   font-size: 45px;
   font-weight: 700;
+  @media (max-width: 500px) {
+    font-size: 35px;
+  }
 `;
 
 const SkillP = styled.p`
@@ -145,18 +157,19 @@ const SkillP = styled.p`
 export const Skills = () => {
   const skillsPr = [
     { type: "HTML", level: 80 },
-    { type: "Javascript", level: 80 },
+    { type: "JavaScript", level: 80 },
     { type: "CSS", level: 80 },
     { type: "React JS", level: 85 },
-    { type: "ReactNative", level: 55 },
+    { type: "ReactNative", level: 60 },
     { type: "Node Js", level: 80 },
     { type: "Express Js", level: 85 },
+    { type: "TypeScript", level: 80 },
     { type: "MongoDB", level: 80 },
-    { type: "SQL", level: 70 },
+    { type: "SQL", level: 80 },
     { type: "Solidity", level: 75 },
-    { type: "PHP", level: 50 },
-    { type: "java", level: 50 },
-    { type: "Python", level: 50 },
+    { type: "PHP", level: 60 },
+    { type: "Java", level: 60 },
+    { type: "Python", level: 60 },
   ];
 
   const colors = {
@@ -166,6 +179,21 @@ export const Skills = () => {
       background: "#124e8c",
     },
   };
+  const [num, setNum] = useState(30);
+  useEffect(() => {
+    const heightStyle = () => {
+      var x = window.matchMedia("(max-width: 500px)");
+      if (x.matches) {
+        // If media query matches
+        // return 30;
+        setNum(20);
+      } else {
+        setNum(30);
+        // return 50;
+      }
+    };
+    heightStyle();
+  }, []);
 
   return (
     <section className="skill" id="skills">
@@ -177,19 +205,23 @@ export const Skills = () => {
               <SkillP>
                 Here are some of my skills on which I have been working.
               </SkillP>
+
               <SkillBar
                 skills={skillsPr}
                 colors={colors}
-                animationDuration={2000}
+                // animationDuration={1000}
+                animationThreshold={0}
+                height={num}
               />
+
               <SkillsContainer>
                 <Skill>
-                  {skills.map((skill) => (
-                    <div>
+                  {skills.map((skill, index) => (
+                    <div key={index}>
                       <SkillTitle>{skill.title}</SkillTitle>
                       <SkillList>
-                        {skill.skills.map((item) => (
-                          <SkillItem>
+                        {skill.skills.map((item, index2) => (
+                          <SkillItem key={index2}>
                             <SkillImage src={item.image} />
                             {item.name}
                           </SkillItem>

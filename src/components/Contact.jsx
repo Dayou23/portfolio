@@ -1,8 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "@mui/material/Button";
+import Snackbar from "@mui/material/Snackbar";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
+import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-// import emailjs from '@emailjs/browser';
-import { Snackbar } from "@mui/material";
+import MuiAlert from "@mui/material/Alert";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const Container = styled.div`
   display: flex;
@@ -122,52 +130,99 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  //hooks
-  const [open, setOpen] = React.useState(false);
   const form = useRef();
+  const [open, setOpen] = React.useState(false);
+  const [err, setErr] = React.useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "service_tox7kqs",
-    //     "template_nv7k7mj",
-    //     form.current,
-    //     "SybVGsYS52j2TfLbi"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       setOpen(true);
-    //       form.current.reset();
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    const formData = new FormData(e.target);
+    const formProps = Object.fromEntries(formData);
+    if (formProps.from_email === "" || formProps.message === "") {
+      setErr(true);
+      return;
+    }
+    emailjs
+      .sendForm(
+        "service_la822gj",
+        "template_4lwx2v3",
+        form.current,
+        "HkF4XidgZ6I3hC6PU"
+      )
+      .then(
+        (result) => {
+          setOpen(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <Container>
+    <Container id="connect">
       <Wrapper>
-        <Title>Contact</Title>
-        {/* <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc> */}
+        <Title>Connect</Title>
+
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Get In Touch</ContactTitle>
+          <ContactTitle>Let's connect</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
+          {/* <ContactInput placeholder="Subject" name="subject" /> */}
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
         <Snackbar
           open={open}
           autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+          onClose={handleClose}
+          // message="Email sent successfully!"
+          // severity="success"
+          action={action}
+        >
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
+            Email sent successfully!
+          </Alert>
+        </Snackbar>
+
+        <Snackbar
+          open={err}
+          autoHideDuration={6000}
+          onClose={() => setErr(false)}
+        >
+          <Alert
+            onClose={() => setErr(false)}
+            severity="error"
+            sx={{ width: "100%" }}
+          >
+            Something is wrong!
+          </Alert>
+        </Snackbar>
       </Wrapper>
     </Container>
   );

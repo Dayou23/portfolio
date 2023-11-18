@@ -19,8 +19,8 @@ const Projects = ({ openModal, setOpenModal }) => {
     <Container id="projects">
       <Wrapper>
         <Title>Projects</Title>
-        <Desc></Desc>
-        <ToggleButtonGroup>
+        <Desc>Here are some of my Projects on which I have been working.</Desc>
+        {/* <ToggleButtonGroup>
           {toggle === "all" ? (
             <ToggleButton active value="all" onClick={() => setToggle("all")}>
               All
@@ -78,11 +78,12 @@ const Projects = ({ openModal, setOpenModal }) => {
               MACHINE LEARNING
             </ToggleButton>
           )}
-        </ToggleButtonGroup>
+        </ToggleButtonGroup> */}
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectCard
+                key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}

@@ -1,7 +1,8 @@
 import imgBachelors from "../images/imgBachelors.jpg";
 import imgMaster from "../images/imgMaster.jpg";
 
-export const Bio = {};
+export const Bio =
+  "https://drive.google.com/file/d/1RYs_Sepha6gXojUlDn9Z6iJotaIcHndB/view";
 
 export const skills = [
   {
@@ -97,98 +98,75 @@ export const education = [
   {
     id: 0,
     img: imgBachelors,
-    school: "",
+    school: "University Mohamed Khider Biskra",
     date: "sep 2017 - aug 2020",
-    grade: "",
-    desc: ".",
-    degree: "Bachelors Degree",
+    desc: "I hold a Bachelor's degree in Computer Science and Information Systems, which I earned in 2020 from the esteemed University Mohamed Khider Biskra. This comprehensive program provided me with a strong foundation in computer science, equipping me with the knowledge and skills necessary to excel in the ever-evolving field of technology. During my three years of study, I delved into a wide range of subjects, including programming, data structures, algorithms, software development, and information systems. My academic journey not only honed my technical abilities but also fostered a problem-solving mindset and a passion for innovation. My degree serves as the bedrock of my career, enabling me to tackle complex challenges and contribute effectively to the world of software development and IT.",
+    degree: "Bachelors Degree - Computer Science Information Systems",
   },
   {
     id: 1,
     img: imgMaster,
-    school: "",
+    school: "University Mohamed Khider Biskra",
     date: "sep 2020 - aug 2022",
-    grade: "",
-    desc: ".",
-    degree: "Master Degree",
-  },
-  {
-    id: 2,
-    img: "",
-    school: "",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: ".",
-    degree: "",
+    desc: "I hold a Master's degree in Computer Science with a specialization in Information Systems, Optimization, and Decision Making, which I proudly earned in 2022 from Mohamed Khedr University in Biskra. This advanced program deepened my expertise in the intersection of computer science and information systems, equipping me with specialized knowledge and skills in optimizing decision-making processes. Over the course of two intensive years, I engaged in advanced coursework, research, and practical applications that honed my ability to tackle complex challenges in the world of technology. My Master's degree not only expanded my technical proficiency but also nurtured my critical thinking and problem-solving abilities, enabling me to address intricate issues in information systems and make data-driven decisions. It serves as a testament to my commitment to continuous learning and my dedication to staying at the forefront of the field.",
+    degree:
+      "Master Degre - Computer Science Information Systems, Optimization, and Decision",
   },
 ];
 
 export const projects = [
   {
     id: 9,
-    title: "AAA",
-    date: "Jun 2023 - Jul 2023",
-    description: "DDDDDDDDDDDDDDDddd",
-    image: "",
-    tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-    ],
+    title: "cronos shop",
+    date: "Jan 2023 - may 2023",
+    description:
+      "I am thrilled to showcase my full-stack development expertise through the creation of the 'Cronos' store, a project I single-handedly conceived and developed. On the client side, I utilized JavaScript, HTML5, and CSS to craft the website's engaging user interface. React JS, Material UI, and Redux were integral in creating a seamless and visually appealing front-end experience. For the server-side functionality, I turned to Node.js and Express.js, ensuring robust and efficient handling of requests and responses. On the database front, I implemented MongoDB to manage data, ensuring data integrity and reliability. The 'Cronos' store project is a testament to my end-to-end web development skills, from front-end design to back-end implementation, showcasing my ability to deliver a fully functional and responsive web application.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/Screenshot%202023-09-21%20203823.png?alt=media&token=084255e9-da0b-45d3-a587-5fa65bbc6870",
+    tags: ["React Js", "Redux", "MongoDb", "Node Js", "Express Js"],
     category: "web app",
-    github: "",
-    webapp: "",
+    github: "https://github.com/Dayou23/CRONOS",
+    webapp: "https://cronos-market.web.app",
   },
   {
     id: 0,
-    title: "bbb",
-    date: "Apr 2023 - May 2023",
-    description: "dddddd.",
-    image: "",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    title: "cronos dashboard",
+    date: "Jan 2023 - may 2023",
+    description:
+      "I take immense pride in my work on the Cronos Dashboard, a full-stack web application that I meticulously developed from start to finish. On the client side, I leveraged my expertise in JavaScript, HTML5, and CSS to create an elegant and user-friendly interface. The implementation of the React JS library, in conjunction with Material UI and Redux, ensured a seamless and responsive front-end experience. On the server side, I turned to Node.js and Express.js to build a robust and efficient server infrastructure capable of handling complex administrative tasks. For data management, I seamlessly integrated MongoDB on the back end, guaranteeing data integrity and accessibility. The Cronos Dashboard project exemplifies my prowess as a full-stack developer, showcasing my ability to craft sophisticated, end-to-end web applications that elevate user experiences and streamline administrative processes. note: cronos dashboard is considered an admin for cronos store",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/Screenshot%202023-09-21%20212022.png?alt=media&token=e2533609-c67a-4f15-a548-3748d9de136c",
+    tags: ["React Js", "Redux", "MongoDb", "Node Js", "Express Js"],
     category: "web app",
-    github: "",
-    webapp: "",
-    member: [
-      {
-        name: "Zehana diyaa",
-        img: "",
-        linkedin: "",
-        github: "",
-      },
-      {
-        name: "",
-        img: "",
-        linkedin: "",
-        github: "",
-      },
-    ],
+    github: "https://github.com/Dayou23/cronos-dashboard",
+    webapp: "https://cronos-dashboard.web.app",
+    // member: [
+    //   {
+    //     name: "Zehana diyaa",
+    //     img: "",
+    //     linkedin: "",
+    //     github: "",
+    //   },
+    //   {
+    //     name: "",
+    //     img: "",
+    //     linkedin: "",
+    //     github: "",
+    //   },
+    // ],
   },
   {
-    id: 1,
-    title: "ccc",
-    date: "Oct 2022 - Present",
-    description: "dddd.",
-    image: "",
-    tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "NodeMailer",
-    ],
+    id: 0,
+    title: "prayer timing",
+    date: "oct 2023 - nov 2023",
+    description:
+      "The Islamic faith involves five fundamental prayers, and the scheduling of these prayers is associated with the sun's cycle from sunrise to sunset. The Aladhan API was utilized to ascertain the timings of each prayer session. A website was created using the React JS library, and the design incorporated the Material user interface.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/prayer-timing-2023-11-17%20183959.png?alt=media&token=687a6677-d840-4af1-98b8-2dcb733a5145",
+    tags: ["React Js", "Material UI"],
     category: "web app",
-    github: "",
-    webapp: "",
+    github: "https://github.com/Dayou23/prayer-time",
+    webapp: "https://zippy-cucurucho-9945ac.netlify.app/",
   },
 ];
 

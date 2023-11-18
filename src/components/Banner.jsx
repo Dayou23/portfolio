@@ -5,13 +5,16 @@ import { useState, useEffect } from "react";
 // import TrackVisibility from "react-on-screen";
 import styled from "styled-components";
 import { ArrowCircleRightOutlined } from "@mui/icons-material";
+import { HashLink } from "react-router-hash-link";
 const BannerStyle = styled.section`
   margin-top: 0;
-  padding: 200px 0 100px 0;
-  /* background-image: url('./assets/img/quinton-coetzee.jpg'); */
-  /* background-position: top center; */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+  padding: 150px 0 100px 0;
+  @media (max-width: 770px) {
+    padding: 250px 0 100px 0;
+  }
+  @media (max-width: 320px) {
+    padding: 280px 0 100px 0;
+  }
 `;
 const BannerH1 = styled.h1`
   color: ${({ theme }) => theme.text_primary};
@@ -21,6 +24,9 @@ const BannerH1 = styled.h1`
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  @media (max-width: 500px) {
+    font-size: 45px;
+  }
 `;
 const BannerSpan = styled.span`
   color: rgba(0, 109, 204);
@@ -36,7 +42,7 @@ const BannerP = styled.p`
 `;
 
 const BannerButton = styled.button`
-  color: ${({ theme }) => theme.text_primary};
+  /* color: ${({ theme }) => theme.text_primary}; */
   font-weight: 700;
   font-size: 20px;
   margin-top: 50px;
@@ -57,6 +63,12 @@ const Tagline = styled.span`
   margin-bottom: 16px;
   display: inline-block;
 `;
+
+const StyledLink = styled.a`
+  color: ${({ theme }) => theme.text_primary};
+  text-decoration: none;
+`;
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -111,7 +123,7 @@ export const Banner = () => {
     <BannerStyle id="home">
       <div className="container ">
         <div className="row aligh-items-center">
-          <div className="Col col-xs-12 col-md-6 col-xl-7">
+          <div className="Col col-xs-12 col-md-6 col-xl-9">
             <div>
               {/* {({ isVisible }) => ( */}
               <div
@@ -128,18 +140,26 @@ export const Banner = () => {
                   </div>
                 </BannerH1>
                 <BannerP>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  I'm an experienced full-stack developer with a passion for
+                  creating seamless digital experiences. I excel in front-end
+                  and back-end development, emphasizing excellence, design, and
+                  high-impact solutions. Check out my portfolio to see my
+                  versatile skill set and how I can enhance your next project.
                 </BannerP>
-                <Tagline Resume>Check Resume</Tagline>
-                <BannerButton
-                  className="button"
-                  onClick={() => console.log("connect")}
-                >
-                  Let’s Connect <ArrowCircleRightOutlined size={25} />
+                <Tagline>
+                  {" "}
+                  <StyledLink
+                    href="https://drive.google.com/file/d/1RYs_Sepha6gXojUlDn9Z6iJotaIcHndB/view"
+                    target="display"
+                  >
+                    Check Resume
+                  </StyledLink>
+                </Tagline>
+
+                <BannerButton className="button">
+                  <StyledLink href="#connect">
+                    Let’s Connect <ArrowCircleRightOutlined size={25} />
+                  </StyledLink>
                 </BannerButton>
               </div>
               {/* )} */}

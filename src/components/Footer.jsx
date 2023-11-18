@@ -31,13 +31,22 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <SocialIcon>
-              <SocialIconA href="#">
+              <SocialIconA
+                href="https://dz.linkedin.com/in/diyaa-zehana-ab21091a7"
+                target="_blank"
+              >
                 <SocialIconImg src={navIcon1} alt="" />
               </SocialIconA>
-              <SocialIconA href="#">
+              <SocialIconA
+                href="https://www.facebook.com/profile.php?id=100009818266006"
+                target="_blank"
+              >
                 <SocialIconImg src={navIcon2} alt="" />
               </SocialIconA>
-              <SocialIconA href="#">
+              <SocialIconA
+                href="https://www.instagram.com/zehana_diyaa/"
+                target="_blank"
+              >
                 <SocialIconImg src={navIcon3} alt="" />
               </SocialIconA>
             </SocialIcon>

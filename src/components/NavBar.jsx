@@ -200,16 +200,37 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
               >
                 Projects
               </LinkNav>
+              <LinkNav
+                color={scrolled}
+                href="#education"
+                className={
+                  activeLink === "education"
+                    ? "nav-link active navbar-link"
+                    : "nav-link navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("education")}
+              >
+                Education
+              </LinkNav>
             </Nav>
             <span className="navbar-text">
               <SocialIcon color={scrolled}>
-                <SocialIconA href="#">
+                <SocialIconA
+                  href="https://dz.linkedin.com/in/diyaa-zehana-ab21091a7"
+                  target="_blank"
+                >
                   <SocialIconImg src={navIcon1} alt="" />
                 </SocialIconA>
-                <SocialIconA href="#">
+                <SocialIconA
+                  href="https://www.facebook.com/profile.php?id=100009818266006"
+                  target="_blank"
+                >
                   <SocialIconImg src={navIcon2} alt="" />
                 </SocialIconA>
-                <SocialIconA href="#">
+                <SocialIconA
+                  href="https://www.instagram.com/zehana_diyaa/"
+                  target="_blank"
+                >
                   <SocialIconImg src={navIcon3} alt="" />
                 </SocialIconA>
               </SocialIcon>
