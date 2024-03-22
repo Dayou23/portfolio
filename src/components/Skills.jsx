@@ -156,20 +156,20 @@ const SkillP = styled.p`
 
 export const Skills = () => {
   const skillsPr = [
-    { type: "HTML", level: 80 },
-    { type: "JavaScript", level: 80 },
-    { type: "CSS", level: 80 },
-    { type: "React JS", level: 85 },
+    { type: "HTML", level: 75 },
+    { type: "JavaScript", level: 75 },
+    { type: "CSS", level: 75 },
+    { type: "React JS", level: 80 },
     { type: "ReactNative", level: 60 },
-    { type: "Node Js", level: 80 },
-    { type: "Express Js", level: 85 },
-    { type: "TypeScript", level: 80 },
-    { type: "MongoDB", level: 80 },
-    { type: "SQL", level: 80 },
-    { type: "Solidity", level: 75 },
-    { type: "PHP", level: 60 },
-    { type: "Java", level: 60 },
-    { type: "Python", level: 60 },
+    { type: "Node Js", level: 75 },
+    { type: "Express Js", level: 75 },
+    { type: "TypeScript", level: 75 },
+    { type: "MongoDB", level: 75 },
+    { type: "SQL", level: 75 },
+    { type: "Solidity", level: 65 },
+    { type: "PHP", level: 50 },
+    { type: "Java", level: 50 },
+    { type: "Python", level: 50 },
   ];
 
   const colors = {

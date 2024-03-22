@@ -1,9 +1,6 @@
 import imgBachelors from "../images/imgBachelors.jpg";
 import imgMaster from "../images/imgMaster.jpg";
 
-export const Bio =
-  "https://drive.google.com/file/d/1RYs_Sepha6gXojUlDn9Z6iJotaIcHndB/view";
-
 export const skills = [
   {
     title: "Other abilities",
@@ -57,8 +54,7 @@ export const skills = [
 
       {
         name: "Git",
-        image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+        image: "https://git-scm.com/images/logos/logomark-orange@2x.png",
       },
       {
         name: "GitHub",
@@ -74,7 +70,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
       },
 
       {
@@ -89,6 +85,11 @@ export const skills = [
       {
         name: "Microsoft Office",
         image: "https://img.icons8.com/color/48/office-365.png",
+      },
+      {
+        name: "strapi",
+        image:
+          "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/32f3a89c-99c4-466f-8536-dd75f65fa320/Strapi-Monogram/w=1920,quality=80,fit=scale-down",
       },
     ],
   },
@@ -116,7 +117,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
+    id: 1,
     title: "cronos shop",
     date: "Jan 2023 - may 2023",
     description:
@@ -129,7 +130,7 @@ export const projects = [
     webapp: "https://cronos-market.web.app",
   },
   {
-    id: 0,
+    id: 2,
     title: "cronos dashboard",
     date: "Jan 2023 - may 2023",
     description:
@@ -156,7 +157,7 @@ export const projects = [
     // ],
   },
   {
-    id: 0,
+    id: 3,
     title: "prayer timing",
     date: "oct 2023 - nov 2023",
     description:
@@ -168,12 +169,17 @@ export const projects = [
     github: "https://github.com/Dayou23/prayer-time",
     webapp: "https://zippy-cucurucho-9945ac.netlify.app/",
   },
-];
-
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  {
+    id: 4,
+    title: "prayer timing",
+    date: "Jan 2024 - feb 2024",
+    description:
+      "Deifel-Gypse, a full-stack website project that highlights my proficiency in both frontend and backend programming, is something I'm glad to present. Utilizing the client-side capabilities of HTML5, CSS, and JavaScript, I created a dynamic and captivating user interface with the Next.js framework. To effectively manage and distribute information, I incorporated the Strapi information Management System on the server side in the meantime. This project showcases my expertise in cutting-edge web development technologies as well as my ability to combine frontend and backend elements in a smooth manner to produce a well-thought-out and useful online solution.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/deifel-gypse.png?alt=media&token=eab4014e-5972-4e4b-b81f-395c25ef6497",
+    tags: ["next Js", "strapi"],
+    category: "web app",
+    github: "https://github.com/Dayou23/gypsum_company",
+    webapp: "https://deifel-gypse.vercel.app/",
+  },
 ];
