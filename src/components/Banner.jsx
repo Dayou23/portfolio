@@ -149,7 +149,7 @@ export const Banner = () => {
                 <Tagline>
                   {" "}
                   <StyledLink
-                    href="https://drive.google.com/file/d/1RYs_Sepha6gXojUlDn9Z6iJotaIcHndB/view"
+                    href="https://drive.google.com/file/d/1ZtCp4fv4krHAdsBlo24unX07ZSsdU6ug/view?usp=sharing"
                     target="display"
                   >
                     Check Resume
