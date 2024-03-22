@@ -174,10 +174,10 @@ export const projects = [
     title: "prayer timing",
     date: "Jan 2024 - feb 2024",
     description:
-      "Deifel-Gypse, a full-stack website project that highlights my proficiency in both frontend and backend programming, is something I'm glad to present. Utilizing the client-side capabilities of HTML5, CSS, and JavaScript, I created a dynamic and captivating user interface with the Next.js framework. To effectively manage and distribute information, I incorporated the Strapi information Management System on the server side in the meantime. This project showcases my expertise in cutting-edge web development technologies as well as my ability to combine frontend and backend elements in a smooth manner to produce a well-thought-out and useful online solution.",
+      "Deifel-Gypse, a full-stack website project that highlights my proficiency in both frontend and backend programming, is something I'm glad to present. Utilizing the client-side capabilities of HTML5, Tailwind CSS, and TypeScript, I created a dynamic and captivating user interface with the Next.js framework. To effectively manage and distribute information, I incorporated the Strapi information Management System on the server side in the meantime. This project showcases my expertise in cutting-edge web development technologies as well as my ability to combine frontend and backend elements in a smooth manner to produce a well-thought-out and useful online solution.",
     image:
       "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/deifel-gypse.png?alt=media&token=eab4014e-5972-4e4b-b81f-395c25ef6497",
-    tags: ["next Js", "strapi"],
+    tags: ["next Js", "strapi", "Tailwind CSS"],
     category: "web app",
     github: "https://github.com/Dayou23/gypsum_company",
     webapp: "https://deifel-gypse.vercel.app/",
