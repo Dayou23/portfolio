@@ -20,7 +20,7 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>Here are some of my Projects on which I have been working.</Desc>
-        {/* <ToggleButtonGroup>
+        <ToggleButtonGroup>
           {toggle === "all" ? (
             <ToggleButton active value="all" onClick={() => setToggle("all")}>
               All
@@ -37,48 +37,32 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="web app"
               onClick={() => setToggle("web app")}
             >
-              WEB APP'S
+              WEB
             </ToggleButton>
           ) : (
             <ToggleButton value="web app" onClick={() => setToggle("web app")}>
-              WEB APP'S
+              WEB
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
+          {toggle === "mobile app" ? (
             <ToggleButton
               active
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="mobile app"
+              onClick={() => setToggle("mobile app")}
             >
-              ANDROID APP'S
+              MOBILE
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="mobile app"
+              onClick={() => setToggle("mobile app")}
             >
-              ANDROID APP'S
+              MOBILE
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "machine learning" ? (
-            <ToggleButton
-              active
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButton>
-          ) : (
-            <ToggleButton
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButton>
-          )}
-        </ToggleButtonGroup> */}
+        </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
             projects.map((project, index) => (

@@ -101,7 +101,7 @@ export const education = [
     img: imgBachelors,
     school: "University Mohamed Khider Biskra",
     date: "sep 2017 - aug 2020",
-    desc: "I hold a Bachelor's degree in Computer Science and Information Systems, which I earned in 2020 from the esteemed University Mohamed Khider Biskra. This comprehensive program provided me with a strong foundation in computer science, equipping me with the knowledge and skills necessary to excel in the ever-evolving field of technology. During my three years of study, I delved into a wide range of subjects, including programming, data structures, algorithms, software development, and information systems. My academic journey not only honed my technical abilities but also fostered a problem-solving mindset and a passion for innovation. My degree serves as the bedrock of my career, enabling me to tackle complex challenges and contribute effectively to the world of software development and IT.",
+    desc: "He earned a Bachelor's degree in Computer Science and Information Systems from University Mohamed Khider Biskra in 2020. The program provided him with a strong foundation in computer science, including programming, algorithms, and software development. His academic journey cultivated technical skills, a problem-solving mindset, and a passion for innovation, preparing him to excel in software development and IT. His degree serves as the cornerstone of his career, enabling him to tackle complex challenges and make impactful contributions to the field.",
     degree: "Bachelors Degree - Computer Science Information Systems",
   },
   {
@@ -109,7 +109,7 @@ export const education = [
     img: imgMaster,
     school: "University Mohamed Khider Biskra",
     date: "sep 2020 - aug 2022",
-    desc: "I hold a Master's degree in Computer Science with a specialization in Information Systems, Optimization, and Decision Making, which I proudly earned in 2022 from Mohamed Khedr University in Biskra. This advanced program deepened my expertise in the intersection of computer science and information systems, equipping me with specialized knowledge and skills in optimizing decision-making processes. Over the course of two intensive years, I engaged in advanced coursework, research, and practical applications that honed my ability to tackle complex challenges in the world of technology. My Master's degree not only expanded my technical proficiency but also nurtured my critical thinking and problem-solving abilities, enabling me to address intricate issues in information systems and make data-driven decisions. It serves as a testament to my commitment to continuous learning and my dedication to staying at the forefront of the field.",
+    desc: "He earned a Master's degree in Computer Science with a focus on Information Systems, Optimization, and Decision Making from Mohamed Khedr University in Biskra in 2022. This program deepened his expertise in computer science and information systems, enhancing his skills in decision-making processes through advanced coursework, research, and practical applications. His degree expanded his technical proficiency, fostered critical thinking, and enabled him to address complex challenges in technology and information systems with data-driven solutions, highlighting his dedication to ongoing learning and leadership in the field.",
     degree:
       "Master Degre - Computer Science Information Systems, Optimization, and Decision",
   },
@@ -171,7 +171,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "prayer timing",
+    title: "Deifel Gypse",
     date: "Jan 2024 - feb 2024",
     description:
       "Deifel-Gypse, a full-stack website project that highlights my proficiency in both frontend and backend programming, is something I'm glad to present. Utilizing the client-side capabilities of HTML5, Tailwind CSS, and TypeScript, I created a dynamic and captivating user interface with the Next.js framework. To effectively manage and distribute information, I incorporated the Strapi information Management System on the server side in the meantime. This project showcases my expertise in cutting-edge web development technologies as well as my ability to combine frontend and backend elements in a smooth manner to produce a well-thought-out and useful online solution.",
@@ -181,5 +181,32 @@ export const projects = [
     category: "web app",
     github: "https://github.com/Dayou23/gypsum_company",
     webapp: "https://deifel-gypse.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "kuro mobile",
+    date: " may 2024 - july 2024",
+    description:
+      "Kuro is an innovative mobile application designed for publishing technical events. Developed with the React Native framework, it harnesses the power of Tailwind CSS for creating intuitive user interfaces. On the backend, Kuro leverages the robust capabilities of the Appwrite platform, ensuring seamless integration and efficient performance.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/kuroMobile.jpg?alt=media&token=58734331-9acc-4023-9971-0a9c5b2f792d",
+    tags: ["React Native", "Tailwind CSS", "Appwrite"],
+    category: "mobile app",
+    github: "https://github.com/Dayou23/kuro_mobile",
+    webapp:
+      "https://expo.dev/accounts/diyaa_code/projects/kuro/builds/3f724f7f-306f-42cd-8522-d95f5424aff8",
+  },
+  {
+    id: 6,
+    title: "kuro web",
+    date: " may 2024 - july 2024",
+    description:
+      "Kuro is a cutting-edge platform dedicated to publishing tech events. Developed with the Next.js framework and TypeScript, it utilizes MongoDB for robust database management. For secure authentication and streamlined user management, Kuro integrates Clerk, ensuring a seamless and efficient user experience.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/zehana-diyaa.appspot.com/o/kuro_web.PNG?alt=media&token=07667460-6399-4b51-9da0-7d8cafd04fbe",
+    tags: ["next Js", "Tailwind CSS", "TypeScript", "mongoDB"],
+    category: "web app",
+    github: "https://github.com/Dayou23/kuro",
+    webapp: "https://kuro-ochre.vercel.app/",
   },
 ];

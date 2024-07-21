@@ -159,9 +159,14 @@ export const NavBar = ({ setDarkMode, darkMode }) => {
           >
             <DarkMode />
           </ModeButton>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            style={{ paddingRight: "20px" }}
+          >
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
+
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <LinkNav

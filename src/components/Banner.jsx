@@ -77,7 +77,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [
     // "Web and Mobile Developer",
-    "Web Developer",
+    "Web and mobile Developer",
     "Full Stack Developer",
   ];
   const period = 2000;
@@ -130,21 +130,21 @@ export const Banner = () => {
               // className={isVisible ? "animate__animated animate__fadeIn" : ""}
               >
                 <BannerH1>
-                  {`Hi! I'm Diyaa`}{" "}
+                  {`Hi! Diyaa here`}{" "}
                   <div
                     className="txt-rotate"
                     // dataPeriod="1000"
                     // data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
                   >
-                    I am a <BannerSpan>{text}</BannerSpan>
+                    He's a <BannerSpan>{text}</BannerSpan>
                   </div>
                 </BannerH1>
                 <BannerP>
-                  I'm an experienced full-stack developer with a passion for
-                  creating seamless digital experiences. I excel in front-end
+                  He's an experienced full-stack developer with a passion for
+                  creating seamless digital experiences. He excels in front-end
                   and back-end development, emphasizing excellence, design, and
-                  high-impact solutions. Check out my portfolio to see my
-                  versatile skill set and how I can enhance your next project.
+                  high-impact solutions. Check out his portfolio to see his
+                  versatile skill set and how he can enhance your next project.
                 </BannerP>
                 <Tagline>
                   {" "}
