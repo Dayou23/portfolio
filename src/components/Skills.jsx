@@ -3,29 +3,7 @@ import styled from "styled-components";
 import SkillBar from "react-skillbars";
 import { Style } from "@mui/icons-material";
 import { useEffect, useState } from "react";
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1100px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
+// import ProgressSkills from "./ProgressSkills";
 
 export const Title = styled.div`
   font-size: 42px;
@@ -151,7 +129,7 @@ const SkillP = styled.p`
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 40px 0;
+  margin: 14px 0 20px 0;
 `;
 
 export const Skills = () => {
@@ -159,16 +137,17 @@ export const Skills = () => {
     { type: "HTML", level: 75 },
     { type: "JavaScript", level: 75 },
     { type: "CSS", level: 75 },
-    { type: "React JS", level: 80 },
-    { type: "ReactNative", level: 60 },
-    { type: "Node Js", level: 75 },
-    { type: "Express Js", level: 75 },
+    { type: "ReactJS", level: 80 },
+    { type: "ReactNative", level: 80 },
+    { type: "NextJS", level: 80 },
+    { type: "NodeJs", level: 75 },
+    { type: "ExpressJs", level: 75 },
     { type: "TypeScript", level: 75 },
     { type: "MongoDB", level: 75 },
     { type: "SQL", level: 75 },
     { type: "Solidity", level: 65 },
-    { type: "PHP", level: 50 },
-    { type: "Java", level: 50 },
+    { type: "PHP", level: 60 },
+    { type: "Java", level: 70 },
     { type: "Python", level: 50 },
   ];
 
@@ -213,6 +192,7 @@ export const Skills = () => {
                 animationThreshold={0}
                 height={num}
               />
+              {/* <ProgressSkills /> */}
 
               <SkillsContainer>
                 <Skill>
