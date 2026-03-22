@@ -129,12 +129,12 @@ const EducationCard = ({ education }) => {
   return (
     <Card>
       <Top>
-        <Image src={education.img} />
+        {/* <Image src={education.img} />
         {education.img && (
           <a href={education.img} target="new">
             <Document src={education.img} />
           </a>
-        )}
+        )} */}
         <Body>
           <Name>{education.school}</Name>
           <Degree>{education.degree}</Degree>

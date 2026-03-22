@@ -1,5 +1,5 @@
-import imgBachelors from "../images/imgBachelors.jpg";
-import imgMaster from "../images/imgMaster.jpg";
+// import imgBachelors from "../images/imgBachelors.jpg";
+// import imgMaster from "../images/imgMaster.jpg";
 
 export const skills = [
   {
@@ -98,7 +98,7 @@ export const skills = [
 export const education = [
   {
     id: 0,
-    img: imgBachelors,
+    // img: imgBachelors,
     school: "University Mohamed Khider Biskra",
     date: "sep 2017 - aug 2020",
     desc: "He earned a Bachelor's degree in Computer Science and Information Systems from University Mohamed Khider Biskra in 2020. The program provided him with a strong foundation in computer science, including programming, algorithms, and software development. His academic journey cultivated technical skills, a problem-solving mindset, and a passion for innovation, preparing him to excel in software development and IT. His degree serves as the cornerstone of his career, enabling him to tackle complex challenges and make impactful contributions to the field.",
@@ -106,7 +106,7 @@ export const education = [
   },
   {
     id: 1,
-    img: imgMaster,
+    // img: imgMaster,
     school: "University Mohamed Khider Biskra",
     date: "sep 2020 - aug 2022",
     desc: "He earned a Master's degree in Computer Science with a focus on Information Systems, Optimization, and Decision Making from Mohamed Khedr University in Biskra in 2022. This program deepened his expertise in computer science and information systems, enhancing his skills in decision-making processes through advanced coursework, research, and practical applications. His degree expanded his technical proficiency, fostered critical thinking, and enabled him to address complex challenges in technology and information systems with data-driven solutions, highlighting his dedication to ongoing learning and leadership in the field.",
